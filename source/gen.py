@@ -3,7 +3,7 @@
 import os, argparse
 from os.path import sep
 
-EXCLUDE = ['.git', '.gitignore', 'LICENSE', 'Makefile', 'make.bat', 'setup.py', 'source', 'XDU_CS_Learning_cracker.egg-info', 'requirements.txt']
+EXCLUDE = ['.git', '.gitignore', 'LICENSE', 'Makefile', 'make.bat', 'setup.py', 'source', 'XDU_CS_Learning_cracker.egg-info']
 README_MD = ['README.md', 'readme.md']
 EXT = '.md'
 PREFIX = 'https://github.com/baolintian/XDU_CS_Learning/blob/master/'
@@ -16,12 +16,7 @@ rst = '''Welcome to XDU-CS-Learning-Cracker!
 
    TOC
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 '''
 
 def name_filter(s):
@@ -93,7 +88,7 @@ if __name__ == '__main__':
     parser.add_argument("--output", type=str, default='.')
     args = parser.parse_args()
     files, dirs = get_all(args.root)
-    files = [u"./序.md", u"./前置技能.md", u"./总结.md"]
+    files = ["./序.md", "./前置技能.md", "./总结.md"]
     dirs = ['./CS', './SE']
     files = [i for i in files if i.split(sep)[-1] not in EXCLUDE]
     dirs = [i for i in dirs if i.split(sep)[-1] not in EXCLUDE]
