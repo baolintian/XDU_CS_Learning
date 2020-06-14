@@ -65,7 +65,9 @@ def get_course(root, cur, depth=0, threshold=30):
 def get_semester(cur):
     md = ''
     files, dirs = get_all(cur)
-    files = ['大一上.md', '大一下.md', '大二上.md', '大二下.md', '大三上.md', '大三下.md', '大四.md']
+    files = ['/大一上.md', '大一下.md', '大二上.md', '大二下.md', '大三上.md', '大三下.md', '大四.md']
+    for i in range(len(files)):
+        files[i] = cur+files[i]
     for i in files:
         if i.endswith(EXT):
             md += f'{open(i).read()}\n\n'
