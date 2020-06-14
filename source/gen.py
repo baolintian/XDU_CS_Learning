@@ -86,7 +86,7 @@ def gen_md(d, n, m):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--root", type=str, default='REKCARC-TSC-UHT')
+    parser.add_argument("--root", type=str, default='XDU-CS-Learning')
     parser.add_argument("--output", type=str, default='.')
     args = parser.parse_args()
     files, dirs = get_all(args.root)
