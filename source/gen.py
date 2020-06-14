@@ -90,7 +90,7 @@ if __name__ == '__main__':
     parser.add_argument("--output", type=str, default='.')
     args = parser.parse_args()
     files, dirs = get_all(args.root)
-	files = ['./序.md', './前置技能.md', './总结.md']
+	files = [u"./序.md", u"./前置技能.md", u"./总结.md"]
 	dirs = ['./CS', './SE']
     files = [i for i in files if i.split(sep)[-1] not in EXCLUDE]
     dirs = [i for i in dirs if i.split(sep)[-1] not in EXCLUDE]
@@ -100,7 +100,7 @@ if __name__ == '__main__':
         os.makedirs(args.output)
     for i in files:
 		if i == "./总结.md":
-			continue;
+			continue
         gen_md(args.output, i.replace(args.root, '.'), open(i).read())
     for i in dirs:
         gen_md(args.output, i.replace(args.root, '.'), get_semester(i))
