@@ -65,6 +65,7 @@ def get_course(root, cur, depth=0, threshold=30):
 def get_semester(cur):
     md = ''
     files, dirs = get_all(cur)
+    files = ['大一上.md', '大一下.md', '大二上.md', '大二下.md', '大三上.md', '大三下.md', '大四.md']
     for i in files:
         if i.endswith(EXT):
             md += f'{open(i).read()}\n\n'
@@ -105,7 +106,7 @@ if __name__ == '__main__':
     for i in dirs:
         gen_md(args.output, i.replace(args.root, '.'), get_semester(i))
 	
-    gen_md(args.output, i.replace(args.root, '.'), open("./总结.md").read())
+    gen_md(args.output, "./总结.md".replace(args.root, '.'), open("./总结.md").read())
     _all = [i.replace(EXT, '').split(sep)[-1] for i in files + dirs]
     rst = rst.replace('TOC', '\n   '.join(_all))
     #rst = rst.replace('二', '无').replace('三', '二').replace('无', '三')
