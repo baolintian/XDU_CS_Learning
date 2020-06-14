@@ -3,10 +3,10 @@
 import os, subprocess
 from setuptools import setup
 
-subprocess.check_call('python3 ./auto/gen.py --root . --output auto'.split())
+subprocess.check_call('python3 ./source/gen.py --root . --output source'.split())
 
 setup(
-    name='xdu-cs-learning-cracker',
+    name='XDU-CS-Learning-cracker',
     description='frontend generator',
     install_requires=['sphinx-markdown-tables'],
 )

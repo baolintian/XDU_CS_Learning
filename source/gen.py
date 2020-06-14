@@ -3,18 +3,22 @@
 import os, argparse
 from os.path import sep
 
-EXCLUDE = ['.git', '.gitignore', 'LICENSE', 'Makefile', 'make.bat', 'setup.py', 'auto']
+EXCLUDE = ['.git', '.gitignore', 'LICENSE', 'Makefile', 'make.bat', 'setup.py', 'source', 'XDU_CS_Learning_cracker.egg-info']
 README_MD = ['README.md', 'readme.md']
 EXT = '.md'
 PREFIX = 'https://github.com/baolintian/XDU_CS_Learning/blob/master/'
 rst = '''Welcome to XDU-CS-Learning-Cracker!
 ===========================================
+
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
+
    TOC
+
 Indices and tables
 ==================
+
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
@@ -82,7 +86,7 @@ def gen_md(d, n, m):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--root", type=str)
+    parser.add_argument("--root", type=str, default='REKCARC-TSC-UHT')
     parser.add_argument("--output", type=str, default='.')
     args = parser.parse_args()
     files, dirs = get_all(args.root)
