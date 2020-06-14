@@ -3,7 +3,7 @@
 import os, argparse
 from os.path import sep
 
-EXCLUDE = ['.git', '.gitignore', 'LICENSE', 'Makefile', 'make.bat', 'setup.py', 'source', 'XDU_CS_Learning_cracker.egg-info']
+EXCLUDE = ['.git', '.gitignore', 'LICENSE', 'Makefile', 'make.bat', 'setup.py', 'source', 'XDU_CS_Learning_cracker.egg-info', 'requirements.txt']
 README_MD = ['README.md', 'readme.md']
 EXT = '.md'
 PREFIX = 'https://github.com/baolintian/XDU_CS_Learning/blob/master/'
@@ -102,5 +102,5 @@ if __name__ == '__main__':
         gen_md(args.output, i.replace(args.root, '.'), get_semester(i))
     _all = [i.replace(EXT, '').split(sep)[-1] for i in files + dirs]
     rst = rst.replace('TOC', '\n   '.join(_all))
-    rst = rst.replace('二', '无').replace('三', '二').replace('无', '三')
+    #rst = rst.replace('二', '无').replace('三', '二').replace('无', '三')
     open(os.path.join(args.output, 'index.rst'), 'w').write(rst)
