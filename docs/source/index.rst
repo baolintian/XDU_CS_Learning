@@ -6,6 +6,7 @@ XDU_CS_Learning
    :maxdepth: 2
    
    序
+   前置技能
    大一上
    大一下
    大二上
