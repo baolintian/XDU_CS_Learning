@@ -21,6 +21,7 @@
 + 帮忙上传: 可以发给仓库维护者帮忙上传，或者提 issue。
 + 用网页操作或者桌面版 fork and pull request. 操作方式可以参考[blog](https://blog.csdn.net/qq_29277155/article/details/51048990)。
 
+__记得在修改的地方添加自己的github账号，注明出处。__
 
 ## 许可
 
