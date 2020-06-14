@@ -19,6 +19,9 @@
 # -- Markdown setup --------------------------------------------------------------
 # 
 from recommonmark.parser import CommonMarkParser
+from recommonmark.transform import AutoStructify
+
+
 source_parsers = {
     '.md': CommonMarkParser,
 }
@@ -50,6 +53,8 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+	'recommonmark', 
+	'sphinx_markdown_tables'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -114,6 +119,12 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'XDU_CS_Learning'
 
+def setup(app):
+    app.add_config_value('recommonmark_config', {
+            'url_resolver': lambda url: github_doc_root + url,
+            'auto_toc_tree_section': 'Contents',
+            }, True)
+    app.add_transform(AutoStructify)
 
 # -- Options for manual page output ------------------------------------------
 
