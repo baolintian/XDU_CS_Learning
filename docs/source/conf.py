@@ -27,7 +27,7 @@ source_suffix = ['.rst', '.md']
 
 # -- Project information -----------------------------------------------------
 
-project = u'MySkillTree'
+project = u'XDU_CS_Learning'
 copyright = u'2020, Babydragon'
 author = u'Babydragon'
 
@@ -112,7 +112,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'MySkillTree'
+htmlhelp_basename = 'XDU_CS_Learning'
 
 
 # -- Options for manual page output ------------------------------------------
@@ -120,7 +120,7 @@ htmlhelp_basename = 'MySkillTree'
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'MySkillTree', u'MySkillTree Documentation',
+    (master_doc, 'XDU_CS_Learning', u'XDU_CS_Learning Documentation',
      [author], 1)
 ]
 
@@ -131,8 +131,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'MySkillTree', u'MySkillTree Documentation',
-     author, 'MySkillTree', 'One line description of project.',
+    (master_doc, 'XDU_CS_Learning', u'XDU_CS_Learning Documentation',
+     author, 'XDU_CS_Learning', 'One line description of project.',
      'Miscellaneous'),
 ]
 
