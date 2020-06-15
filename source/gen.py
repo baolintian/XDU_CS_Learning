@@ -101,7 +101,7 @@ if __name__ == '__main__':
         gen_md(args.output, i.replace(args.root, '.'), get_semester(i))
 	
     gen_md(args.output, "./总结.md".replace(args.root, '.'), open("./总结.md").read())
-    _all = [i.replace(EXT, '').split(sep)[-1] for i in files + dirs + "./总结.md"]
+    _all = [i.replace(EXT, '').split(sep)[-1] for i in files + dirs + ["./总结.md"]]
     rst = rst.replace('TOC', '\n   '.join(_all))
     #rst = rst.replace('二', '无').replace('三', '二').replace('无', '三')
     open(os.path.join(args.output, 'index.rst'), 'w').write(rst)
