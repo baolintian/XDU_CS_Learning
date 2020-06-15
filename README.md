@@ -12,12 +12,19 @@
 
 
 
+### 致谢
+
+感谢下面的同学分享：
+
+[@TobiasLee](https://github.com/TobiasLee)
+
 
 
 ## 贡献
 
 欢迎来贡献，由于个人的原因，很多的课程经验并不是最好的，也是不完善的。
 可以通过如下方式参与项目：
+
 + 帮忙上传: 可以发给仓库维护者帮忙上传，或者提 issue。
 + 用网页操作或者桌面版 fork and pull request. 操作方式可以参考[blog](https://blog.csdn.net/qq_29277155/article/details/51048990)。
 
