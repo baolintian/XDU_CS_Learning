@@ -59,7 +59,9 @@ def get_course(root, cur, depth=0, threshold=30):
 def get_semester(cur):
     md = ''
     files, dirs = get_all(cur)
-    files = ['README.md', '大一上.md', '大一下.md', '大二上.md', '大二下.md', '大三上.md', '大三下.md', '大四.md']
+    if cur == "./CS" or cur == "./SE":
+        files = ['README.md', '大一上.md', '大一下.md', '大二上.md', '大二下.md', '大三上.md', '大三下.md', '大四.md']
+    
     for i in range(len(files)):
         files[i] = cur+"/"+files[i]
     for i in files:
@@ -88,7 +90,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     files, dirs = get_all(args.root)
     files = ["./序.md", "./前置技能.md"]
-    dirs = ['./CS', './SE']
+    dirs = ['./CS', './SE', "./竞赛"]
     files = [i for i in files if i.split(sep)[-1] not in EXCLUDE]
     dirs = [i for i in dirs if i.split(sep)[-1] not in EXCLUDE]
     print(files)
