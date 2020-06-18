@@ -64,6 +64,7 @@ def get_semester(cur):
     
     for i in range(len(files)):
         files[i] = cur+"/"+files[i]
+        print("233", files[i], cur)
     for i in files:
         if i.endswith(EXT):
             md += f'{open(i).read()}\n\n'
