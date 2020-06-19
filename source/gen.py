@@ -90,7 +90,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     files, dirs = get_all(args.root)
     files = ["./序.md", "./前置技能.md"]
-    dirs = ['./CS', './SE', "./竞赛"]
+    dirs = ['./CS', './SE', "./竞赛", "./实验室&科研"]
     files = [i for i in files if i.split(sep)[-1] not in EXCLUDE]
     dirs = [i for i in dirs if i.split(sep)[-1] not in EXCLUDE]
     print(files)
