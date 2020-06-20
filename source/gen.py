@@ -11,7 +11,7 @@ rst = '''Welcome to XDU-CS-Learning-Cracker!
 ===========================================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
    :caption: Contents:
 
    TOC
