@@ -63,7 +63,7 @@ def get_semester(cur):
         files = ['README.md', '大一上.md', '大一下.md', '大二上.md', '大二下.md', '大三上.md', '大三下.md', '大四.md']
         for i in range(len(files)):
             files[i] = cur+"/"+files[i]
-    if cur == "./升学"
+    if cur == "./升学":
         files = ['保研.md', '出境深造.md', '考研.md']
         for i in range(len(files)):
             files[i] = cur+"/"+files[i]
