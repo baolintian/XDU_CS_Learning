@@ -94,5 +94,5 @@ leetcode的题分为Easy ， Mid ， Hard三个难度，一般的公司考察到
 
 还有很多资料需要大家自己学习去整理。
 
-[@Acmenwangtuo](https://github.com/Acmenwangtuo)
+[@16-Acmenwangtuo](https://github.com/Acmenwangtuo)
 
